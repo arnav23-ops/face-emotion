@@ -1,0 +1,163 @@
+/* General Container */
+.emotion-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #a3bffa, #c084f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Hide the canvas element */
+canvas.hidden {
+  display: none;
+}
+
+.emotion-box {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(to right, #3b82f6, #9b4de1);
+  padding: 24px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  padding: 16px;
+}
+
+.video-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-element {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.video-element:hover {
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.start-btn, .stop-btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-btn {
+  background-color: #10b981;
+}
+
+.start-btn:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.stop-btn {
+  background-color: #ef4444;
+}
+
+.stop-btn:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+.error-message {
+  padding: 16px;
+  text-align: center;
+}
+
+.error-box {
+  background-color: #fef2f2;
+  color: #ef4444;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.emotion-result {
+  padding: 24px;
+  text-align: center;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+.emotion-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.emotion-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.emotion-description {
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+}
+
+.confidence-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.confidence-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Emotion-specific classes */
+.emotion-happy {
+  background: linear-gradient(to right, #34d399, #10b981);
+}
+
+.emotion-sad {
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+}
+
+.emotion-angry {
+  background: linear-gradient(to right, #f87171, #ef4444);
+}
+
+.emotion-fear {
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+}
+
+.emotion-surprise {
+  background: linear-gradient(to right, #a78bfa, #8b5cf6);
+}
+
+.emotion-neutral {
+  background: linear-gradient(to right, #d1d5db, #9ca3af);
+}
+
+.emotion-disgust {
+  background: linear-gradient(to right, #fdba74, #fb923c);
+}
